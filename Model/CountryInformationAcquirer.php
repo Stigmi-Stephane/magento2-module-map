@@ -24,6 +24,12 @@ use Magento\Framework\Exception\NoSuchEntityException;
  */
 class CountryInformationAcquirer extends \Magento\Directory\Model\CountryInformationAcquirer
 {
+
+    /**
+     * @var \Magento\Directory\Model\ResourceModel\Country\Collection $countryCollection
+     */
+    private $countryCollection;
+
     /**
      * CountryInformationAcquirer constructor.
      *
